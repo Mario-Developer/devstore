@@ -1,0 +1,61 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+mat-card {
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+mat-card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+mat-card-content h2,
+mat-card-content p {
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

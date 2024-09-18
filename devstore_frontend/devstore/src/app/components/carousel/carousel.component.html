@@ -1,0 +1,83 @@
+<!--<div class="carousel">
+    <div class="carousel-item" *ngFor="let image of images">
+        <mat-card>
+            <img mat-card-image [src]="image.src" alt="{{image.title}}">
+            <mat-card-content>
+                <h2>{{image.title}}</h2>
+                <p>{{image.description}}</p>
+                <p>{{image.price}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>-->
+
+<!--<div class="carousel">
+    <button mat-button (click)="prev()">❮</button>
+    <div class="carousel-item">
+        <mat-card>
+            <img mat-card-image [src]="images[currentIndex].src" alt="{{images[currentIndex].title}}">
+            <mat-card-content>
+                <h2>{{images[currentIndex].title}}</h2>
+                <p>{{images[currentIndex].description}}</p>
+                <p>{{images[currentIndex].price}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="carousel-item">
+        <mat-card>
+            <img mat-card-image [src]="images[currentIndex + 1].src" alt="{{images[currentIndex + 1].title}}">
+            <mat-card-content>
+                <h2>{{images[currentIndex + 1].title}}</h2>
+                <p>{{images[currentIndex + 1].description}}</p>
+                <p>{{images[currentIndex + 1].price}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="carousel-item">
+        <mat-card>
+            <img mat-card-image [src]="images[currentIndex + 2].src" alt="{{images[currentIndex + 2].title}}">
+            <mat-card-content>
+                <h2>{{images[currentIndex + 2].title}}</h2>
+                <p>{{images[currentIndex + 2].description}}</p>
+                <p>{{images[currentIndex + 2].price}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <button mat-button (click)="next()">❯</button>
+</div>-->
+<h2>Sección del carrusel...</h2>
+<!--<div class="carousel">
+    <button mat-button (click)="prev()">&#10094;</button>
+    <div class="carousel-items">
+        <div class="carousel-item" *ngFor="let image of getVisibleImages()">
+            <mat-card>
+                <img mat-card-image [src]="image.src" alt="{{image.title}}">
+                <mat-card-content>
+                    <h2>{{image.title}}</h2>
+                    <p>{{image.description}}</p>
+                    <p>{{image.price}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <button mat-button (click)="next()">&#10095;</button>
+</div>-->
+
+<div class="carousel">
+    <button mat-button (click)="prev()">❮</button>
+    <div class="carousel-container">
+        <div class="carousel-items" [style.transform]="getTransform()">
+            <div class="carousel-item" *ngFor="let image of images">
+                <mat-card>
+                    <img mat-card-image [src]="image.src" alt="{{image.title}}">
+                    <mat-card-content>
+                        <h2>{{image.title}}</h2>
+                        <p>{{image.description}}</p>
+                        <p>{{image.price}}</p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <button mat-button (click)="next()">❯</button>
+</div>
